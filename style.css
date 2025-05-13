@@ -17,6 +17,7 @@
     color: #333;
   }
   
+  
   /* Header */
   header {
     background-color: #003366;
@@ -98,7 +99,7 @@
   }
   
   .card:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
   }
   
  /* Estilo general para íconos */
