@@ -1,0 +1,612 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  p {
+    font-family: 'Poppins', sans-serif; /* Cambia la fuente a Poppins */
+    font-weight: 400; /* Ajusta el grosor de la fuente (400 es normal, 600 es seminegrita) */
+    line-height: 1.6; /* Mejora la legibilidad */
+    color: #333; /* Asegúrate de que el color sea legible */
+}
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #003366;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  /* Hero */
+  .hero {
+    background-color: #0066cc;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Manuales */
+  .manuales {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .card.instalador a {
+    display: inline-block; /* Asegura que el margen funcione correctamente */
+    margin-top: 26px; /* Ajusta el valor según sea necesario */
+  }
+
+  .card.comercial a {
+    display: inline-block; /* Asegura que el margen funcione correctamente */
+    margin-top: 18px; /* Ajusta el valor según sea necesario */
+  }
+
+  .card.nominas a {
+    display: inline-block; /* Asegura que el margen funcione correctamente */
+    margin-top: 20px; /* Ajusta el valor según sea necesario */
+  }
+
+  .card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+ /* Estilo general para íconos */
+.icono {
+    margin-bottom: 1rem;
+  }
+  
+  /* Tamaños individuales */
+  .icono-contabilidad {
+    width: 130px;
+    height: auto;
+  }
+  
+  .icono-nominas {
+    width: 140px;
+    height: auto;
+  }
+  
+  .icono-comercial {
+    width: 100px;
+    height: auto;
+    margin-top: 2px; /* Ajusta el valor según sea necesario */
+  }
+
+  .icono-factura {
+    width: 140px;
+    height: auto;
+    margin-top: -8px; /* Ajusta el valor negativo para subir la imagen */
+  }
+
+  
+  
+  /* Tarjeta especial de SQL Server */
+.card.sqlserver {
+    grid-column: 1 / -1; /* Ocupar todo el ancho en el grid */
+    background-color: #ede7f6;
+    border-left: 6px solid #673ab7;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+    text-align: left;
+  }
+  
+  .card.sqlserver .icono-sql {
+    width: 190px;
+    height: auto;
+  }
+  
+  .card.sqlserver h2 {
+    margin-bottom: 0.3rem;
+    color: #4527a0;
+  }
+  
+  .card.sqlserver p {
+    flex: 1;
+    margin: 0;
+  }
+  
+  .card.sqlserver a {
+    background-color: #673ab7;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .card.sqlserver a:hover {
+    background-color: #512da8;
+  }
+  
+  
+  /* Estilos únicos por sistema */
+
+  .instalador {
+    
+    border-left: 6px solid #2196f3;
+  }
+  .contabilidad {
+    background-color: #e3f2fd;
+    border-left: 6px solid #4DB6AC;
+  }
+  
+  .nominas {
+    background-color: #CDE6F7;
+    border-left: 6px solid #1e9fe9;
+  }
+  
+  .comercial {
+    background-color: #e8f5e9;
+    border-left: 6px solid #4caf50;
+  }
+
+  .factura {
+    background-color: #d1f2eb ; /* Verde menta claro */
+    border-left: 6px solid #0066cc; /* Azul principal del logo */
+    color: #003366; /* Azul oscuro para el texto */
+}
+  
+  /* Título y botón */
+  .card h2 {
+    color: #003366;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card a {
+    margin-top: 1rem;
+    background-color: #0066cc;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .card a:hover {
+    background-color: #004d99;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  /*Manual sql stilo */
+  .manual-content {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.manual-content h2 {
+  font-size: 1.5rem;
+  color: #003366;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.manual-content .emoji {
+  font-size: 1.2rem;
+}
+
+.manual-content p {
+  margin-bottom: 1rem;
+}
+
+.manual-content ul {
+  list-style: disc;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.manual-content section {
+  background-color: #ffffff;
+  border-left: 5px solid #0066cc;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.requisitos-lista {
+  list-style: none;
+  padding-left: 0;
+}
+
+.requisitos-lista li {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.requisitos-lista .clave {
+  color: #0066cc;
+  font-weight: bold;
+  display: inline-block;
+  min-width: 180px;
+}
+
+.descarga-link {
+  color: #0066cc;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.descarga-link:hover {
+  border-bottom: 2px solid #0066cc;
+  color: #004b99;
+}
+
+.imagen-zoom {
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+.imagen-zoom img {
+  width: 85%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  transform: scale(0.85); /* imagen más pequeña inicialmente */
+  transition: transform 0.4s ease;
+  border-radius: 10px;
+  cursor: zoom-in;
+}
+
+.imagen-zoom img:hover {
+  transform: scale(1); /* tamaño real al pasar el cursor */
+}
+
+/* Fijar la navbar al hacer scroll */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #002f6c; /* Color del navbar */
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Fijar la sección .hero justo debajo de la navbar */
+.hero {
+  position: sticky;
+  top: 64px; /* Ajusta según el alto del header */
+  z-index: 999;
+  background-color: #0066cc;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Asegura que el contenido no quede oculto detrás del sticky */
+.manual-content {
+  padding-top: 2rem;
+}
+
+/* Barra visible por defecto */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #002f6c;
+  color: white;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: top 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Ocultar la barra */
+#navbar.hidden {
+  top: -100px;
+}
+
+.herosql {
+  position: relative;
+  top: 64px; /* Ajusta según el alto del header */
+  z-index: 999;
+  background-color: #0066cc;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 70px; /* Ajusta el valor según sea necesario */
+}
+
+.card.nominas img {
+  margin-bottom: 1px; /* Reduce el margen inferior de la imagen */
+}
+
+.card.nominas h2 {
+  margin-top: 1px; /* Reduce el margen superior del encabezado */
+}
+
+.heroContabilidad {
+  position: relative;
+  top: 64px; /* Ajusta según el alto del header */
+  z-index: 999;
+  background-color: #0066cc;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 70px; /* Ajusta el valor según sea necesario */
+}
+
+.heroComercial {
+  position: relative;
+  top: 64px; /* Ajusta según el alto del header */
+  z-index: 999;
+  background-color: #0066cc;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 70px; /* Ajusta el valor según sea necesario */
+}
+
+.heroFactura {
+  position: relative;
+  top: 64px; /* Ajusta según el alto del header */
+  z-index: 999;
+  background-color: #0066cc;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 70px; /* Ajusta el valor según sea necesario */
+}
+
+.heroNominas {
+  position: relative;
+  top: 64px; /* Ajusta según el alto del header */
+  z-index: 999;
+  background-color: #0066cc;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 70px; /* Ajusta el valor según sea necesario */
+}
+
+.contacto {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 1.8rem;
+  color: #003366;
+  margin-bottom: 2rem;
+}
+
+.contacto-grid {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.columna {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.columna p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.columna a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.columna a:hover {
+  text-decoration: underline;
+}
+
+/* Estructura general del nav */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Enlaces del nav */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+/* Contenedor dropdown */
+.dropdown {
+  position: relative;
+}
+
+/* Menú oculto por defecto */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #003366;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  z-index: 1000;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Mostrar al hacer hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Estilos para los ítems del menú */
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu a {
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  color: white;
+}
+
+.dropdown-menu a:hover {
+  background-color: #004080;
+}
+
+/* Contenedor general mantiene su diseño en grid */
+.manuales {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Contenedor horizontal para las cards desplazables */
+.card-scroll-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Carrusel horizontal (sin afectar el diseño de las .card) */
+.cards-carousel {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 0.5rem;
+}
+
+.cards-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.cards-carousel {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Flechas de scroll */
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #0066cc;
+  color: white;
+  font-size: 2rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.card-scroll-wrapper:hover .scroll-arrow {
+  display: block;
+}
+
+.scroll-left {
+  left: -10px;
+}
+
+.scroll-right {
+  right: -10px;
+}
+
+.cards-carousel .card {
+  flex: 0 0 auto;
+  
+  align-self: flex-start;
+}
+
+.card.factura h2 {
+  margin-top: -22px; /* Ajusta el valor negativo para subir el título */
+}
+
+.card.factura a {
+  margin-top: 17px; /* Ajusta el valor para bajar el botón */
+}

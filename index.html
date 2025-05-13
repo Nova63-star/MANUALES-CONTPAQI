@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manuales CONTPAQi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="logo">CONTPAQi Manuales</div>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#manuales">Manuales</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#">Acerca de</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Encuentra los manuales de instalación de los sistemas principales CONTPAQi</h1>
+    <h1>Guías detalladas y requisitos.</h1>
+  </section>
+
+  <main id="manuales" class="manuales">
+      <!-- Tarjeta de SQL Server -->
+      <div class="card sqlserver">
+        <img src="img/sql-server-2019.png" alt="SQL Server" class="icono icono-sql">
+        <h2>Instalación de SQL Server 2019</h2>
+        <p>Para algunos programas es necesario instalar primero SQL Server 2019 y crear una instancia personalizada.</p>
+        <a href="sqlserver.html">Ver manual</a>
+      </div>
+
+      <div class="card-scroll-wrapper">
+        <div class="scroll-arrow scroll-left" id="scrollLeft">&#9664;</div>
+      
+        <div class="cards-carousel" id="cardsContainer">
+          <div class="card instalador">
+            <img src="img/contpaqi.png" alt="Icono Contabilidad" class="icono icono-contabilidad">
+            <h2>Descargar Instalador</h2>
+            <p>Selecciona y descarga el sistema requerido</p>
+            <a href="https://www.contpaqi.com/descargas">Descargas</a>
+          </div>
+      
+          <div class="card contabilidad">
+            <img src="img/contabilidad.png" alt="Icono Contabilidad" class="icono icono-contabilidad">
+            <h2>Contabilidad</h2>
+            <p>Instalación y configuración del sistema CONTPAQi Contabilidad.</p>
+            <a href="contabilidad.html">Ver manual</a>
+          </div>
+      
+          <div class="card nominas">
+            <img src="img/nominas.png" alt="Icono Nóminas" class="icono icono-nominas">
+            <h2>Nóminas</h2>
+            <p>Pasos para instalar y activar el sistema CONTPAQi Nóminas.</p>
+            <a href="nominas.html">Ver manual</a>
+          </div>
+      
+          <div class="card comercial">
+            <img src="img/comercial.png" alt="Icono Comercial" class="icono icono-comercial">
+            <h2>Comercial Premium</h2>
+            <p>Guía completa para la instalación del sistema Comercial Premium.</p>
+            <a href="comercial.html">Ver manual</a>
+          </div>
+          
+          <div class="card factura">
+            <img src="img/factura electronica.png" alt="Icono Comercial" class="icono icono-factura">
+            <h2>Factura Electronica</h2>
+            <p>Guía completa para la instalación del sistema Factura Electronica.</p>
+            <a href="factura.html">Ver manual</a>
+          </div>
+        </div>
+        
+      
+        <div class="scroll-arrow scroll-right" id="scrollRight">&#9654;</div>
+      </div>
+  </main>
+
+  <section id="contacto" class="contacto">
+  <h2> Contacto</h2>
+  <div class="contacto-grid">
+    <div class="columna">
+      <p><strong>Empresa:</strong> GRUPO CONTSULTA</p>
+      <p><strong>Dirección:</strong> Paraiso #256, Col. Versalles Sur, C.P. 63130</p>
+      <p><strong>Teléfono:</strong> (+52)311 214 2550</p>
+    </div>
+    <div class="columna">
+      <p><strong>Correo electrónico:</strong> <a href="mailto:soporte@solucionesxyz.com">soporte@solucionesxyz.com</a></p>
+      <p><strong>Sitio web:</strong> <a href="http://www.solucionesxyz.com" target="_blank">www.solucionesxyz.com</a></p>
+      <p><strong>Horario:</strong> Lunes a Viernes, 9:00 a.m. a 7:00 p.m.</p>
+    </div>
+  </div>
+</section>
+
+  
+  
+
+  <footer>
+    <p>&copy; 2025 Manuales CONTPAQi | Proyecto de residencia</p>
+  </footer>
+
+  <script>
+    const scrollLeft = document.getElementById("scrollLeft");
+    const scrollRight = document.getElementById("scrollRight");
+    const cardsContainer = document.getElementById("cardsContainer");
+  
+    const desplazamiento = 600; // Cambia este valor para avanzar más
+  
+    scrollLeft.addEventListener("click", () => {
+      cardsContainer.scrollBy({ left: -desplazamiento, behavior: "smooth" });
+    });
+  
+    scrollRight.addEventListener("click", () => {
+      cardsContainer.scrollBy({ left: desplazamiento, behavior: "smooth" });
+    });
+  </script>
+  
+</body>
+</html>

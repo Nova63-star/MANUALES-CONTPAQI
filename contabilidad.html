@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual Contabilidad | CONTPAQi</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header id="navbar">
+  <div class="logo">CONTPAQi Manuales</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li class="dropdown">
+        <a href="#">Pasos</a>
+        <ul class="dropdown-menu">
+          <li><a href="#paso1">Paso 1</a></li>
+          <li><a href="#paso2">Paso 2</a></li>
+          <li><a href="#paso3">Paso 3</a></li>
+          <li><a href="#paso4">Paso 4</a></li>
+          <li><a href="#paso5">Paso 5</a></li>
+          <li><a href="#paso6">Paso 6</a></li>
+          <li><a href="#paso7">Paso 7</a></li>
+          <li><a href="#paso8">Paso 8</a></li>
+          <li><a href="#paso9">Paso 9</a></li>
+          <li><a href="#paso10">Paso 10</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+  <section class="heroContabilidad">
+    <h1>Manual de instalación - Contabilidad</h1>
+    <p>Guía paso a paso para instalar CONTPAQi Contabilidad.</p>
+  </section>
+
+  <main class="manual-content">
+    <article>
+      <section class="requisitos">
+        <h2><span class="emoji">🖥️</span> Requisitos del sistema</h2>
+        <ul class="requisitos-lista">
+          <li><span class="clave">Sistema Operativo:</span> Windows 10/11 o Windows Server 2016/2019/2022 (64 bits)</li>
+          <li><span class="clave">Procesador:</span> Mínimo 2 GHz, recomendado 3 GHz o superior</li>
+          <li><span class="clave">Memoria RAM:</span> Mínimo 8 GB (recomendado 16 GB)</li>
+          <li><span class="clave">Espacio en Disco:</span> Mínimo 50 GB libres — Recomendado SSD con 100 GB libres</li>
+          <li><span class="clave">.NET Framework:</span> Versión 4.8 instalada</li>
+        </ul>
+      </section>
+
+      <section class="paso">
+        <h2><span class="emoji">📋</span> Inicio de la instalación del sistema</h2>
+        <p>A continuación, te mostraremos los pasos para realizar la instalación del sistema. Para este ejemplo, realizaremos una instalación <strong>local</strong>.</p>
+      
+        <p>Debes tener a la mano los datos de tu instancia de SQL Server®:</p>
+      
+        <ul class="requisitos-lista">
+          <li><span class="clave">Nombre de la instancia:</span> (Ejemplo: COMPAC)</li>
+          <li><span class="clave">Usuario:</span> sa </li>
+          <li><span class="clave">Contraseña de la instancia:</span> [Tu contraseña configurada]</li>
+        </ul>
+      </section>
+
+      <section id="paso1" class="paso">
+        <h2><span class="emoji">🖥️</span> Paso 1: Ejecutar Instalador</h2>
+        <p>En la carpeta descomprimida en la que se descargó el sistema, encontrarás el instalador <strong>CONTPAQi Contabilidad-Bancos</strong>, haz clic derecho sobre él y ejecútalo como <strong>Administrador</strong> para iniciar la instalación.</p>
+
+      
+        <div class="imagen-zoom">
+          <img src="img/contabilidad 1.png" alt="Seleccionar instalación personalizada" />
+        </div>
+        <br>
+        <p>Se mostrará el Splash del sistema</p>
+
+        <div class="imagen-zoom">
+            <img src="img/contabilidad 2.png" alt="Seleccionar instalación personalizada" />
+          </div>
+
+        <br>
+          <p>Y posteriormente la ventana <strong>Bienvenida</strong>, haz clic en el botón <strong>Siguiente</strong> para continuar.</p>
+
+        <div class="imagen-zoom">
+          <img src="img/contabilidad 3.png" alt="Seleccionar instalación personalizada" />
+        </div>
+      </section>
+
+      <section id="paso2" class="paso">
+        <h2><span class="emoji">🧩</span> Paso 2: Acuerdos de Licencia</h2>
+        <p><strong>Lee</strong> cuidadosamente los acuerdos de licencia, <strong>Acepta los términos del acuerdo de licencia</strong> y haz clic en el botón <strong>Siguiente</strong>.</p>
+
+      
+        <div class="imagen-zoom">
+          <img src="img/contabilidad 4.png" alt="Seleccionar instalación personalizada" />
+        </div>
+        <br>
+        <p><strong>Lee</strong> cuidadosamente los acuerdos de servicio, <strong>Acepta los términos del acuerdo de servicio</strong> y haz clic en el botón <strong>Siguiente</strong>.</p>
+
+        <div class="imagen-zoom">
+            <img src="img/contabilidad 5.png" alt="Seleccionar instalación personalizada" />
+          </div>
+      </section>
+
+      <section id="paso3" class="paso">
+        <h2><span class="emoji">📄</span> Paso 3: Sistemas a Instalar</h2>
+        <p>Selecciona los sistemas a instalar, en este caso realizaremos la instalación de ambos sistemas (<strong>CONTPAQi Contabilidad® y CONTPAQi Bancos®</strong>).
+          Posteriormente habilita la opción <strong>Crear acceso directo en el escritorio</strong>, después haz clic en el botón <strong>Siguiente</strong>.</p>
+
+        <div class="imagen-zoom">
+          <img src="img/contabilidad 6.png" alt="Seleccionar instalación personalizada" />
+        </div>
+        </section>
+
+        <section id="paso4" class="paso">
+          <h2><span class="emoji">⚙️</span> Paso 4: Tipo de Instalación</h2>
+          <p>Selecciona el <strong>Tipo instalación</strong> que deseas para la instalación de tú sistema, haz clic en <strong>Siguiente</strong>.
+            En este ejemplo seleccionaremos la instalación: <strong>Local</strong>.</p>
+  
+          <div class="imagen-zoom">
+            <img src="img/contabilidad 7.png" alt="Seleccionar instalación personalizada" />
+          </div>
+          </section>
+
+          <section id="paso5" class="paso">
+            <h2><span class="emoji">🧑‍💻</span> Paso 5: Instalar como Servicio de Windows</h2>
+            <p>Si deseas que el <strong>Servidor de Aplicaciones CONTPAQi®</strong> inicie como un servicio de Windows, habilita la siguiente opción y haz clic en <strong>Siguiente</strong>.
+              Para este ejemplo no la habilitaremos.</p>
+    
+            <div class="imagen-zoom">
+              <img src="img/contabilidad 8.png" alt="Seleccionar instalación personalizada" />
+            </div>
+            </section>
+
+            <section id="paso6" class="paso">
+              <h2><span class="emoji">🧑‍💻</span> Paso 6: Seleccionar Rutas</h2>
+              <p>Antes de iniciar el proceso de instalación, se mostrará una ventana que te indicará las rutas por default del sistema: <strong>Ruta de Programas</strong> (Ejecutables del sistema) y la <strong>Ruta de Empresas</strong>,  haz clic en el botón <strong>Siguiente</strong>.</p>
+      
+              <div class="imagen-zoom">
+                <img src="img/contabilidad 9.png" alt="Seleccionar instalación personalizada" />
+              </div>
+              </section>
+
+              <section id="paso7" class="paso">
+                <h2><span class="emoji">🧩</span> Paso 7: Seleccionar Instancia</h2>
+                <p>Selecciona el <strong>servidor de base de datos</strong> que hayas instalado previamente en tu equipo, captura el <strong>nombre de usuario</strong> sa, la contraseña de la instancia y la <strong>confirmación</strong> de la misma. <br>
+                  Haz clic en el botón <strong>Siguiente</strong> para continuar.</p>
+        
+              
+                <div class="imagen-zoom">
+                  <img src="img/contabilidad 10.png" alt="Seleccionar instalación personalizada" />
+                </div>
+                <br>
+                <p>Se mostrará el mensaje de confirmación indicando la conexión exitosa a la instancia de SQL.</p>
+        
+                <div class="imagen-zoom">
+                    <img src="img/contabilidad 11.png" alt="Seleccionar instalación personalizada" />
+                  </div>
+              </section>
+
+              <section id="paso8" class="paso">
+                <h2><span class="emoji">🖥️</span> Paso 8: Resumen de Instalación</h2>
+                <p>En la siguiente ventana, se visualizará un <strong>Resumen de instalación</strong> del sistema <strong>CONTPAQi Contabilidad</strong> con sus respectivos <strong>complementos</strong>. Presiona el botón Instalar para continuar con dicha instalación.</p>
+        
+              
+                <div class="imagen-zoom">
+                  <img src="img/contabilidad 12.png" alt="Seleccionar instalación personalizada" />
+                </div>
+                <br>
+                <p>Se mostrará el avance de la instalación, durante el avance indicará la instalación de <strong>CONTPAQi Contabilidad®</strong></p>
+        
+                <div class="imagen-zoom">
+                    <img src="img/contabilidad 13.png" alt="Seleccionar instalación personalizada" />
+                  </div>
+        
+                <br>
+                  <p>Indicará la instalación del SDK y las respectivas recomendaciones, haz clic en <strong>Aceptar</strong>.</p>
+        
+                <div class="imagen-zoom">
+                  <img src="img/contabilidad 14.png" alt="Seleccionar instalación personalizada" />
+                </div>
+
+                <br>
+                  <p>Posteriormente se mostrará la instalación de <strong>CONTPAQi® Descarga de CFDI...</strong></p>
+        
+                <div class="imagen-zoom">
+                  <img src="img/contabilidad 15.png" alt="Seleccionar instalación personalizada" />
+                </div>
+              </section>
+
+              <section id="paso9" class="paso">
+                <h2><span class="emoji">📄</span> Paso 9: Herrramientas Complementarias</h2>
+                <p>Al término del proceso, aparecerá una ventana de <strong>información general de la instalación de CONTPAQi® Herramientas complementarias</strong>, lee detenidamente dicha información, por último, para iniciar con la instalación es necesario habilitar la opción correspondiente y dar clic en <strong>Continuar</strong>.</p>
+        
+                <div class="imagen-zoom">
+                  <img src="img/contabilidad 16.png" alt="Seleccionar instalación personalizada" />
+                </div>
+                </section>
+
+                <section id="paso10" class="paso">
+                  <h2><span class="emoji">📄</span> Paso 10: Finalizar</h2>
+                  <p>Para terminar el proceso de instalación haz clic en <strong>Finalizar</strong>.</p>
+          
+                  <div class="imagen-zoom">
+                    <img src="img/contabiliad 17.png" alt="Seleccionar instalación personalizada" />
+                  </div>
+                  </section>
+      
+
+      </article>
+      </main>
+  <footer>
+    <p>&copy; 2025 Manuales CONTPAQi</p>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById("navbar");
+  
+    // Ocultar al hacer scroll hacia abajo
+    let lastScroll = 0;
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+  
+      if (currentScroll > lastScroll) {
+        // Scroll hacia abajo
+        navbar.classList.add("hidden");
+      } else {
+        // Scroll hacia arriba
+        navbar.classList.remove("hidden");
+      }
+  
+      lastScroll = currentScroll;
+    });
+  
+    // Mostrar cuando el cursor se acerque a la parte superior
+    document.addEventListener("mousemove", (e) => {
+      if (e.clientY <= 60) {
+        navbar.classList.remove("hidden");
+      }
+    });
+  </script>
+
+</body>
+</html>
