@@ -118,6 +118,22 @@
       cardsContainer.scrollBy({ left: desplazamiento, behavior: "smooth" });
     });
   </script>
+
+<script>
+  let lastScrollY = window.scrollY;
+  const heroSection = document.querySelector('.hero');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY) {
+      // Ocultar la sección al hacer scroll hacia abajo
+      heroSection.classList.add('hidden');
+    } else {
+      // Mostrar la sección al hacer scroll hacia arriba
+      heroSection.classList.remove('hidden');
+    }
+    lastScrollY = window.scrollY;
+  });
+</script>
   
 </body>
 </html>

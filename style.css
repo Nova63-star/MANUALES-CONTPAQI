@@ -102,6 +102,15 @@
     transform: scale(1.01);
   }
   
+  .hero {
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Suaviza la animación */
+}
+
+.hero.hidden {
+    opacity: 0; /* Hace que desaparezca visualmente */
+    transform: translateY(-20px); /* Mueve la sección ligeramente hacia arriba */
+    pointer-events: none; /* Desactiva la interacción mientras está oculta */
+}
  /* Estilo general para íconos */
 .icono {
     margin-bottom: 1rem;
