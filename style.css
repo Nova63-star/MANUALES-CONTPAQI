@@ -8,6 +8,43 @@
     scroll-behavior: smooth;
   }
   
+  .acerca {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #e3f2fd, #ffffff);
+  text-align: center;
+}
+
+.acerca-contenido {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.acerca-contenido:hover {
+  transform: scale(1.01);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.acerca h2 {
+  color: #003366;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.acerca p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+#contacto {
+    scroll-margin-top: 100px; /* Ajusta este valor según la altura de tu encabezado o sección fija */
+}
 
   p {
     font-family: 'Poppins', sans-serif; /* Cambia la fuente a Poppins */
